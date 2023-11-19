@@ -90,7 +90,7 @@ body {
 }
 
 .open .hidden-box {
-  /* display: block; */
+  display: block;
 }
 
 .open .number,
