@@ -67,7 +67,7 @@ html {
 }
 
 body {
-  font-family: 'Rubik',sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1;
   color: #555;
   font-weight: 400;
@@ -88,6 +88,45 @@ body {
   height: 2.2rem;
 }
 
+.heading-primary,
+.heading-secondary,
+.heading-tertiary{
+  font-weight:700;
+  color:#333;
+  /* color:#45260a; */
+  letter-spacing: -0.5px;
+
+}
+
+.heading-primary{
+  font-size:5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary{
+  font-size:4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem; 
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+
 
 /**************************/
 /* NAVIGATION */
@@ -97,7 +136,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem; 
+  gap: 3.2rem;
 }
 
 .main-nav-link:link,
@@ -126,82 +165,87 @@ body {
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
-} 
+}
 
 /**************************/
 /* HERO SECTION */
 /**************************/
 
 
-.section-hero{
+.section-hero {
   background-color: #fdf2e9;
-padding: 4.8 rem 0 9.6rem 0;
+  padding: 4.8 rem 0 9.6rem 0;
 }
 
-.hero { 
+.hero {
   max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap:9.6rem;
+  gap: 9.6rem;
 }
 
-.heading-primary{
+/* .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.05;
-  color:#333;
+  color: #333;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
-}
+} */
 
-.hero-description{
+.hero-description {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
 }
 
-.btn:link,.btn:visited{
+.btn:link,
+.btn:visited {
   display: inline-block;
-background-color: #e67e22;
-font-size:2rem;
-color: #fff;
-padding: 1.6rem 3.2rem;
-border-radius: 9px;
-text-decoration: none;
-font-weight: 600;
-/* put transistion on original state */
-transition: all 0.3s ;
+  background-color: #e67e22;
+  font-size: 2rem;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 600;
+  /* put transistion on original state */
+  transition: all 0.3s;
 }
 
-.btn--full:link,.btn--full:visited{
+.btn--full:link,
+.btn--full:visited {
   background-color: #e67e22;
   color: #fff;
 }
 
-.btn--full:hover,.btn--full:active{
+.btn--full:hover,
+.btn--full:active {
   background-color: #cf711f;
 }
 
-.btn--outline:link,.btn--outline:visited{
+.btn--outline:link,
+.btn--outline:visited {
   background-color: #fff;
   color: #555;
 }
 
-.btn--outline:hover,.btn--outline:active{
+.btn--outline:hover,
+.btn--outline:active {
   background-color: #fdf2e9;
   /* border: 3px solid #fff; */
   /* Trick to add border inside */
-  box-shadow:inset 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 3px #fff;
 }
 
 .hero-img {
-  width:100%;
+  width: 100%;
 }
 
-.margin-right-sm{
+.margin-right-sm {
   margin-right: 1.6rem !important;
 }
 
@@ -236,4 +280,97 @@ transition: all 0.3s ;
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+
+
+/**************************/
+/* HOW IT WORKS SECTION */
+/**************************/
+
+.section-how {
+  padding: 9.6rem 0;
+  /* background-color: orangered; */
+}
+
+/* reusable styles */
+
+.container{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+ row-gap: 9.6rem;
+ column-gap:6.4rem;
+ align-items: center;
+  /* grid-template-columns: repeat(2, 1fr);  */
+}
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  /*1fr 1fr*/
+
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  /*1fr 1fr 1fr*/
+}
+.grid--center-v{
+
+}
+
+/* .section-how div div {
+  font-size: 50px;
+  padding: 100px;
+  background-color: #333;
+} */
+
+/*
+
+.section-how div div:nth-child(1) {
+  background-color: aqua;
+}
+
+.section-how div div:nth-child(2) {
+  background-color: blue;
+}
+
+.section-how div div:nth-child(3) {
+  background-color: violet;
+}
+
+.section-how div div:nth-child(4) {
+  background-color: yellow;
+}
+
+*/
+
+.step-number{
+  font-size:8.6rem;
+  font-weight: 600;
+  color:#ddd;
+  margin-bottom:1.2rem;
+}
+
+.step-img{
+  width:35%;
+}
+
+.step-img-box{
+  /* margin :auto auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
